@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".Ejercicio02_Activity">
+
+
+    <TextView
+        android:id="@+id/mostrarResultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="35dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/on"
+                style="@style/Button2"
+                android:onClick="encenderCalculadora"
+                android:text="ON"></Button>
+
+            <Button
+                android:id="@+id/num7"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="7"></Button>
+
+            <Button
+                android:id="@+id/num4"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="4"></Button>
+
+            <Button
+                android:id="@+id/num1"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="1"></Button>
+
+            <Button
+                android:id="@+id/del"
+                style="@style/Button2"
+                android:onClick="borrarDigito"
+                android:text="DEL"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/off"
+                style="@style/Button2"
+                android:onClick="apagarCalculadora"
+                android:text="OFF"></Button>
+
+            <Button
+                android:id="@+id/num8"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="8"></Button>
+
+            <Button
+                android:id="@+id/num5"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="5"></Button>
+
+            <Button
+                android:id="@+id/num2"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="2"></Button>
+
+            <Button
+                android:id="@+id/num0"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="0"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/cambioSigno"
+                style="@style/Button2"
+                android:onClick="cambiarSigno"
+                android:text="±"></Button>
+
+            <Button
+                android:id="@+id/num9"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="9"></Button>
+
+            <Button
+                android:id="@+id/num6"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="6"></Button>
+
+            <Button
+                android:id="@+id/num3"
+                style="@style/Button1"
+                android:onClick="numeroPresionado"
+                android:text="3"></Button>
+
+            <Button
+                android:id="@+id/punto"
+                style="@style/Button1"
+                android:onClick="agregarPunto"
+                android:text="."></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/division"
+                style="@style/Button2"
+                android:onClick="operacionPresionada"
+                android:text="/"></Button>
+
+            <Button
+                android:id="@+id/multiplicar"
+                style="@style/Button2"
+                android:onClick="operacionPresionada"
+                android:text="*"></Button>
+
+            <Button
+                android:id="@+id/resta"
+                style="@style/Button2"
+                android:onClick="operacionPresionada"
+                android:text="-"></Button>
+
+            <Button
+                android:id="@+id/suma"
+                style="@style/Button2"
+                android:onClick="operacionPresionada"
+                android:text="+"></Button>
+
+            <Button
+                android:id="@+id/igual"
+                style="@style/Button3"
+                android:onClick="calcular"
+                android:text="="></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TP01-GRUPO9-ANDROID</string>
+
+    <!-- MENU PRINCIPAL -->
+    <string name="titulo">TP N°1</string>
+    <string name="btnEjercicio1">Ir al ejercicio 1</string>
+    <string name="btnEjercicio2">Ir al ejercicio 2</string>
+    <string name="titleIntegrantes">Integrantes</string>
+    <string name="integrantes">Natanael Gomez Carrizo\nAdriel Benjamin Lopez</string>
+    <!-- Ejercicio 1 -->
+    <string name="tituloEjercicio1">Ejercicio 1</string>
+    <string name="tvNumber1">Ingrese un numero</string>
+    <string name="tvNumber2">Ingrese otro numero</string>
+    <string name="btnSumar">Sumar</string>
+    <string name="resultadoSuma">La suma da:</string>
+
+    <string name="volver">Volver</string>
+</resources>
