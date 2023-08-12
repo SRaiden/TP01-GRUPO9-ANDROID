@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.tp01_grupo9_android"
-        minSdk = 25
+        minSdk = 20
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
