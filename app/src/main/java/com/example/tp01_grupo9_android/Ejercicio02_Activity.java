@@ -64,8 +64,16 @@ public class Ejercicio02_Activity extends AppCompatActivity {
 
                 String numeroActual = numeros[finalI].getText().toString();
 
+                float cero = 0;
                 String valorInicial = tvResultado.getText().toString();
-                float cero = Float.parseFloat(valorInicial);
+                if(valorInicial != ""){
+                    if(valorInicial.contains("0.")){
+                        valorInicial = valorInicial + numeroActual;
+                        cero = Float.parseFloat(valorInicial);
+                    }else{
+                        cero = Float.parseFloat(valorInicial);
+                    }
+                }
 
                 if(calculo){
                     tvResultado.setText("");
@@ -210,6 +218,10 @@ public class Ejercicio02_Activity extends AppCompatActivity {
             if (textoActual.length() > 0) {
                 textoActual = textoActual.substring(0, textoActual.length() - 1);
                 tvResultado.setText(textoActual);
+            }
+
+            if(textoActual == ""){
+                tvResultado.setText("0");
             }
         });
 
